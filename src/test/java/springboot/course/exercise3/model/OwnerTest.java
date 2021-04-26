@@ -1,10 +1,13 @@
 package springboot.course.exercise3.model;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("model")
 class OwnerTest {
 
     Owner owner;
@@ -17,6 +20,7 @@ class OwnerTest {
         owner.setTelephone("3214567890");
     }
 
+    @DisplayName("Test dependent assertions")
     @Test
     void dependentAssertions(){
         //then
