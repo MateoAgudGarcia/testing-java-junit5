@@ -6,7 +6,7 @@ import springboot.course.exercise3.testinterfaces.FauxTests;
 import java.util.HashMap;
 import java.util.Map;
 
-@DisplayName("Model map")
+
 public class ModelMapImplementation implements Model, FauxTests {
 
     Map<String, Object> map = new HashMap<>();

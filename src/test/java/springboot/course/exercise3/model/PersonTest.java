@@ -5,7 +5,7 @@ import springboot.course.exercise3.testinterfaces.ModelTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Person")
+
 class PersonTest implements ModelTests {
 
     Person person;
