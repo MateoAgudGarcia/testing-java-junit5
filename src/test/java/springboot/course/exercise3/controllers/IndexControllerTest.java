@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
+import springboot.course.exercise3.testinterfaces.ControllerTests;
 
 import java.time.Duration;
 
@@ -11,7 +12,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
-class IndexControllerTest {
+@DisplayName("Index")
+class IndexControllerTest implements ControllerTests {
 
     IndexController controller;
     @BeforeEach

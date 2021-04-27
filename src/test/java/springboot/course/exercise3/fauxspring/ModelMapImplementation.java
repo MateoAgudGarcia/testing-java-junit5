@@ -1,9 +1,13 @@
 package springboot.course.exercise3.fauxspring;
 
+import org.junit.jupiter.api.DisplayName;
+import springboot.course.exercise3.testinterfaces.FauxTests;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class ModelMapImplementation implements Model{
+@DisplayName("Model map")
+public class ModelMapImplementation implements Model, FauxTests {
 
     Map<String, Object> map = new HashMap<>();
     @Override

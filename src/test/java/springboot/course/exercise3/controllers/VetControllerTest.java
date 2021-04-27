@@ -1,6 +1,7 @@
 package springboot.course.exercise3.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import springboot.course.exercise3.fauxspring.Model;
 import springboot.course.exercise3.fauxspring.ModelMapImplementation;
@@ -10,6 +11,7 @@ import springboot.course.exercise3.services.SpecialtyService;
 import springboot.course.exercise3.services.VetService;
 import springboot.course.exercise3.services.map.SpecialityMapService;
 import springboot.course.exercise3.services.map.VetMapService;
+import springboot.course.exercise3.testinterfaces.ControllerTests;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -17,7 +19,8 @@ import java.util.Set;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-class VetControllerTest {
+@DisplayName("Vet")
+class VetControllerTest implements ControllerTests {
 
     VetService vetService;
     SpecialtyService specialtyService;

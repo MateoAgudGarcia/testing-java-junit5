@@ -4,11 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import springboot.course.exercise3.testinterfaces.ModelTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Tag("model")
-class OwnerTest {
+@DisplayName("Owner")
+class OwnerTest implements ModelTests {
 
     Owner owner;
 
